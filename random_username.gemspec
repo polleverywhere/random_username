@@ -13,6 +13,9 @@ Gem::Specification.new do |gem|
 
   gem.files         = `git ls-files`.split("\n")
   gem.executables   = []
-  gem.test_files    = []
+  gem.test_files    = `git ls-files -- test/*`.split("\n")
   gem.require_paths = ["lib"]
+
+  gem.add_development_dependency "minitest", ">= 5"
+  gem.add_development_dependency "rake"
 end
