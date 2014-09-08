@@ -33,6 +33,9 @@ Or install it yourself as:
     => "legitsunrise"
     => "earthyleaf"
 
+    RandomUsername.username(:max_length => 6)
+    => "fitcow"
+
 ## Contributing
 
 1. Fork it
