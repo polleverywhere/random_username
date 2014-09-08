@@ -1,6 +1,8 @@
 require "random_username/version"
 
 module RandomUsername
+  RandomUsername::Error = Class.new(StandardError)
+
   def self.adjective(options = {})
     get_item("adjectives", options)
   end
@@ -12,7 +14,7 @@ module RandomUsername
   def self.get_item(filename, options = {})
     items = items_from_file(filename)
     items.select!{ |item| item.length <= options[:max_length] } if options[:max_length]
-    items.sample
+    items.sample || fail(RandomUsername::Error, "No words found")
   end
 
   def self.items_from_file(filename)
