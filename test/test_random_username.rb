@@ -43,4 +43,25 @@ class TestRandomUsername < Minitest::Test
       RandomUsername.noun(:max_length => 1)
     end
   end
+
+  def test_username
+    username = RandomUsername.username
+    refute_empty username
+    anchor = (2..username.length).detect do |i|
+      all_adjectives.include?(username[0..i])
+    end
+    assert_includes all_adjectives, username[0..anchor]
+    assert_includes all_nouns, username[anchor+1..-1]
+  end
+
+  def test_username_max_length
+    username = RandomUsername.username(:max_length => 10)
+    assert username.length <= 10
+  end
+
+  def test_username_invalid_max_length
+    assert_raises RandomUsername::Error do
+      RandomUsername.username(:max_length => 2)
+    end
+  end
 end
