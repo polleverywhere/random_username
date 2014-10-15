@@ -18,7 +18,6 @@ anima
 apt
 ardent
 are
-arrogant
 astute
 august
 avid
