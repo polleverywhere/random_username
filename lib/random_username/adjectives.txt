@@ -24,7 +24,6 @@ avid
 awake
 aware
 balmy
-beefy
 benevolent
 big
 billowing
@@ -60,7 +59,6 @@ clear
 clever
 close
 cogent
-combative
 composed
 condemned
 cool
@@ -190,7 +188,6 @@ likely
 limber
 limitless
 lively
-lousy
 loved
 lovely
 loyal
@@ -231,7 +228,6 @@ noble
 normal
 noted
 novel
-numero
 okay
 open
 outrageous
@@ -331,10 +327,8 @@ sweet
 swell
 swift
 talented
-tasteless
 teal
 the
-thoughtless
 thriving
 tidy
 timely
