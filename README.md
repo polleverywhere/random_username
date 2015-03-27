@@ -18,23 +18,27 @@ Or install it yourself as:
 
 ## Usage
 
-    RandomUsername.noun
-    => "sunrise"
-    => "prize"
-    => "sage"
+```
+RandomUsername.username
+=> "hollowlight"
+=> "legitsunrise"
+=> "earthyleaf"
 
-    RandomUsername.adjective
-    => "heroic"
-    => "worthy"
-    => "enigmatic"
+RandomUsername.username(:min_length => 6, :max_length => 8)
+=> "fitcow"
+=> "boldhero"
+=> "topchip"
 
-    RandomUsername.username
-    => "hollowlight"
-    => "legitsunrise"
-    => "earthyleaf"
+RandomUsername.noun
+=> "sunrise"
+=> "prize"
+=> "sage"
 
-    RandomUsername.username(:max_length => 6)
-    => "fitcow"
+RandomUsername.adjective
+=> "heroic"
+=> "worthy"
+=> "enigmatic"
+```
 
 ## Contributing
 
