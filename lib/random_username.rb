@@ -13,12 +13,14 @@ module RandomUsername
 
   def self.username(options = {})
     options[:max_length] /= 2 if options[:max_length]
+    options[:min_length] /= 2 if options[:min_length]
     adjective(options) + noun(options)
   end
 
   def self.get_item(filename, options = {})
     items = items_from_file(filename)
     items.select!{ |item| item.length <= options[:max_length] } if options[:max_length]
+    items.select!{ |item| item.length >= options[:min_length] } if options[:min_length]
     items.sample || fail(RandomUsername::Error, "No words found")
   end
 
