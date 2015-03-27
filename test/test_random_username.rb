@@ -57,7 +57,7 @@ class TestRandomUsername < Minitest::Test
 
   def test_noun_min_length
     noun = RandomUsername.noun(:min_length => 8)
-    assert noun.length <= 8
+    assert noun.length >= 8
   end
 
   def test_noun_invalid_min_length
