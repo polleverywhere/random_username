@@ -27,6 +27,17 @@ class TestRandomUsername < Minitest::Test
     end
   end
 
+  def test_adjective_min_length
+    adjective = RandomUsername.adjective(:min_length => 8)
+    assert adjective.length >= 8
+  end
+
+  def test_adjective_invalid_min_length
+    assert_raises RandomUsername::Error do
+      RandomUsername.adjective(:min_length => 100)
+    end
+  end
+
   def test_noun
     noun = RandomUsername.noun
     refute_empty noun
@@ -41,6 +52,17 @@ class TestRandomUsername < Minitest::Test
   def test_noun_invalid_max_length
     assert_raises RandomUsername::Error do
       RandomUsername.noun(:max_length => 1)
+    end
+  end
+
+  def test_noun_min_length
+    noun = RandomUsername.noun(:min_length => 8)
+    assert noun.length <= 8
+  end
+
+  def test_noun_invalid_min_length
+    assert_raises RandomUsername::Error do
+      RandomUsername.noun(:min_length => 100)
     end
   end
 
@@ -62,6 +84,17 @@ class TestRandomUsername < Minitest::Test
   def test_username_invalid_max_length
     assert_raises RandomUsername::Error do
       RandomUsername.username(:max_length => 2)
+    end
+  end
+
+  def test_username_min_length
+    username = RandomUsername.username(:min_length => 10)
+    assert username.length >= 10
+  end
+
+  def test_username_invalid_min_length
+    assert_raises RandomUsername::Error do
+      RandomUsername.username(:min_length => 100)
     end
   end
 end
