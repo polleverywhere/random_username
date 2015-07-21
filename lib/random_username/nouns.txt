@@ -25,7 +25,6 @@ briars
 brook
 brush
 bunny
-bush
 candy
 canopy
 canyon
