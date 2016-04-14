@@ -60,7 +60,6 @@ clever
 close
 cogent
 composed
-condemned
 cool
 cosmic
 cozy
@@ -86,7 +85,6 @@ dry
 earthy
 easy
 elated
-end
 energized
 enigmatic
 equal
@@ -103,6 +101,7 @@ fiery
 fine
 fit
 flashy
+fleek
 fleet
 flowing
 fluent
@@ -110,16 +109,13 @@ fluffy
 fluttering
 flying
 fond
-for
 frank
 free
 fresh
-frightened
 full
 fun
 funny
 fuscia
-gas
 genial
 gentle
 giddy
@@ -135,7 +131,6 @@ graceful
 grand
 great
 green
-grieving
 groovy
 guided
 gutsy
@@ -149,10 +144,8 @@ high
 hip
 hollow
 holy
-homeless
 honest
 huge
-human
 humane
 humble
 hunky
@@ -264,7 +257,6 @@ rad
 radioactive
 rapid
 rare
-reach
 ready
 real
 regal
@@ -280,10 +272,8 @@ sassy
 saucy
 savvy
 scenic
-screeching
 secret
 seemly
-sensitive
 serene
 sharp
 showy
@@ -340,7 +330,6 @@ trim
 tropical
 true
 trusty
-try
 undisturbed
 unique
 united
