@@ -5,8 +5,8 @@ Gem::Specification.new do |gem|
   gem.name          = "random_username"
   gem.version       = RandomUsername::VERSION
   gem.license       = "MIT"
-  gem.authors       = ["Michael Foley"]
-  gem.email         = ["mike@polleverywhere.com"]
+  gem.authors       = ["Michael Foley", "Sam DeCesare"]
+  gem.email         = ["samd@polleverywhere.com"]
   gem.description   = %q{Generate random Heroku-style names}
   gem.summary       = %q{Generate random Heroku-style names}
   gem.homepage      = "https://github.com/polleverywhere/random_username"
